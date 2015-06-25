@@ -20,7 +20,7 @@ http.createServer(function (req, res) {
                 var $ = require('jquery')(window);
                 var locate = $('#ip_pos').text();
                 console.log(locate);
-                res.writeHead(200, {'Content-Type': 'text/plain'});
+                res.writeHead(200, {'Content-Type': 'text/plain; charset=utf8'});
                 res.end(locate);
             });
         });

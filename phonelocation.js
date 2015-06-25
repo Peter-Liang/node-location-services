@@ -11,7 +11,7 @@ http.createServer(function (req, res) {
                 console.log(err);
             }
 
-            res.writeHead(200, {'Content-Type': 'text/plain'});
+            res.writeHead(200, {'Content-Type': 'text/plain; charset=utf8'});
             res.end(body);
         });
 }).listen(1338);
